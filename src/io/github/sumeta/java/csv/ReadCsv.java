@@ -1,3 +1,4 @@
+package io.github.sumeta.java.csv;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -10,7 +11,7 @@ public class ReadCsv {
 		String row = "";
 		BufferedReader csvReader;
 		try {
-			csvReader = new BufferedReader(new FileReader("data.csv"));
+			csvReader = new BufferedReader(new FileReader("import\\data.csv"));
 			while ((row = csvReader.readLine()) != null) {
 			    String[] data = row.split(",");
 			    System.out.println("===================================================================");
